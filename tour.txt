@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #0066cc;
+  font-family: sans-serif;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1200px;
+  background: #262626;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: verdana;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1200px;
+  background-color: #595959;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #0066cc;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+	color: white;
+}
+
+a:hover {
+	color: red;
+}
+
+a:visited {
+	color: white;
+}
+
+img {
+	max-height: 100%;
+    max-width: 100%;
+}
+
+p {
+	color: yellow;
+}
+
+ol {
+	color: white;
+    text-align: left;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+	<h2><img src="http://r78.cooltext.com/rendered/cooltext355546079104857.png"/><h2>
+  
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home page</a></li>
+      <li><a href="#">About the Artist</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+      
+    </ul>
+    <img src="https://s.mxmcdn.net/images-storage/albums4/8/3/8/5/6/7/42765838_800_800.jpg">
+  </nav>
+  
+  <article>
+  	<h1 style="font-size:30px;color:white;border:10px dotted white;">Tour</h1>
+    
+    <table align="center" style="color:white;font-size:20px;">
+    
+    <tr>
+    <td>5/29 - Bank of New Hampshire Pavillion - Gilford,  NH</td>
+    </tr>
+    
+    <tr>
+    <td>5/30 - Bank of New Hampshire Pavillion - Gilford,  NH</td>
+    </tr>
+    
+    <tr>
+    <td>6/05 - Ruoff Music Center - Noblesville, IN</td>
+    </tr>
+    
+    <tr>
+    <td>6/06 - Blossom Music Center - Cuyahoga Falls, OH</td>
+    </tr>
+    
+    <tr>
+    <td>6/07 - Riverbend Music Center - Cincinnati, OH</td>
+    </tr>
+    
+    
+    <tr>
+    <td>6/11 - St. Joseph's Amphitheater at Lakeview - Syracuse, NY</td>
+    </tr>
+    
+    <tr>
+    <td>6/12 - Hunter Mountain Brewery - Hunter, NY</td>
+    </tr>
+    
+    <tr>
+    <td>6/13 - Hunter Mountain Brewery - Hunter, NY</td>
+    </tr>
+    
+    <tr>
+    <td>6/18 - Family Circle Tennis Center - Charleston, SC</td>
+    </tr>
+    
+    <tr>
+    <td>6/19 - MIDFLORIDA Credit Union Amphitheater - Tampa, FL</td>
+    </tr>
+    
+    <tr>
+    <td>6/27 - Ford Festival Park - Oshkosh, WI</td>
+    </tr>
+    
+    <tr>
+    <td>7/09 - PNC Music Pavillion - Charlotte, NC</td>
+    </tr>
+    
+    
+    </table>
+    
+    <h1 style="font-size:30px;color:white;border:10px dotted white;">Buy Tickets</h1>
+    
+    <iframe src="https://www.ticketmaster.com" height=500 width=700></iframe>
+    
+   
+ 
+  </article>
+  
+</section>
+
+<footer>
+	<i>Copyright &copy; 2020 Jonathon Cannon. All Rights Reserved.</i> 
+</footer>
+
+</body>
+</html>
