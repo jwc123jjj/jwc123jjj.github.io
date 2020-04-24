@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #0066cc;
+  font-family: sans-serif;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1100px;
+  background: #262626;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: verdana;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1100px;
+  background-color: #595959;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #0066cc;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+	color: white;
+}
+
+a:hover {
+	color: red;
+}
+
+a:visited {
+	color: white;
+}
+
+img {
+	max-height: 100%;
+    max-width: 100%;
+}
+
+p {
+	color: yellow;
+}
+
+ol {
+	color: white;
+    text-align: left;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+	<h2><img src="http://r78.cooltext.com/rendered/cooltext355546079104857.png"/><h2>
+  
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home page</a></li>
+      <li><a href="#">About the Artist</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+      
+    </ul>
+    <img src="https://s.mxmcdn.net/images-storage/albums4/8/3/8/5/6/7/42765838_800_800.jpg">
+  </nav>
+  
+  <article>
+  	<h1 style="font-size:30px;color:white;border:10px dotted white;">Top Albums</h1>
+    
+    <table align="center">
+    
+    <tr>
+    <td><img src="https://upload.wikimedia.org/wikipedia/en/a/a6/TR_life_changes.jpg" height="300" width="300"/></td>
+    <td>
+    	<ol>
+        <li>Craving You</li>
+        <li>Unforgettable</li>
+        <li>Sixteen</li>
+        <li>Drink a Little Beer</li>
+        <li>Marry Me</li>
+        <li>Leave Right Now</li>
+        <li>Smooth Like the Summer</li>
+        <li>Life Changes</li>
+        <li>When You Look Like That</li>
+        <li>Sweetheart</li>
+        <li>Kiss Me Like a Stranger</li>
+        <li>Renegades</li>
+        <li>Gateway Love</li>
+        <li>Grave</li>
+        <li>Country Gold</li>
+        <li>Cardboard Heart</li>
+        </ol>
+    </td>
+    </tr>
+    
+    <tr>
+    <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/af/TangledUp.jpg/220px-TangledUp.jpg" height="300" width="300"/></td>
+    <td>
+    	<ol>
+        <li>Anthem</li>
+        <li>Crash and Burn</li>
+        <li>Southside</li>
+        <li>Die a Happy Man</li>
+        <li>Vacation</li>
+        <li>Like It's The Last Time</li>
+        <li>T-shirt</li>
+        <li>Single Girl</li>
+        <li>The Day You Stop Lookin' Back</li>
+        <li>Tangled</li>
+        <li>Playing With Fire</li>
+        <li>I Feel Good</li>
+        <li>Learned It From The Radio</li>
+        </ol>
+    </td>
+    </tr>
+    
+    <tr>
+    <td><img src="https://upload.wikimedia.org/wikipedia/en/a/a0/Thomas_Rhett_-_Center_Point_Road.png"/></td>
+    <td>
+    	<ol>
+        <li>Up</li>
+        <li>Don't Threaten Me With a Good Time</li>
+        <li>Blessed</li>
+        <li>Look What God Gave Her</li>
+        <li>Center Point Road</li>
+        <li>That Old Truck</li>
+        <li>VHS</li>
+        <li>Notice</li>
+        <li>Sand</li>
+        <li>Beer Can't Fix</li>
+        <li>Things You Do For Love</li>
+        <li>Remember You Young</li>
+        <li>Don't Stop Driving</li>
+        <li>Barefoot</li>
+        <li>Dream You Never Had</li>
+        <li>Almost</li>
+        </ol>
+    </td>
+    </tr>
+    
+    </table>
+ 
+  </article>
+  
+</section>
+
+<footer>
+	<i>Copyright &copy; 2020 Jonathon Cannon. All Rights Reserved.</i> 
+</footer>
+
+</body>
+</html>

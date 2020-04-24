@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #0066cc;
+  font-family: sans-serif;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 900px;
+  background: #262626;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: verdana;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 900px;
+  background-color: #595959;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #0066cc;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+	color: white;
+}
+
+a:hover {
+	color: red;
+}
+
+a:visited {
+	color: white;
+}
+
+img {
+	max-height: 100%;
+    max-width: 100%;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+	<h2><img src="http://r67.cooltext.com/rendered/cooltext355371588423631.png"/><h2>
+  
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home page</a></li>
+      <li><a href="#">About the Artist</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+      
+    </ul>
+    <img src="https://s.mxmcdn.net/images-storage/albums4/8/3/8/5/6/7/42765838_800_800.jpg">
+  </nav>
+  
+  <article style="color:white;">
+  	<img src="https://nashvillelifestyles.com/downloads/31000/download/image003.jpg?cb=3258ff74c7f1433801e583546dd44571&w=640"/>
+    <p>"Thomas Rhett" Akins Jr. is the son of Rhett Akins.  He was born in Georgia on March 30, 1990.  His parents got divorced when he was young because of his dad's music career. Thomas Rhett promised his mama that he would never follow in his daddy's footsteps.  He dropped out of college to start his music career.</p>
+    <p>Thomas Rhett married his wife Lauren in 2012.  They had known each other since they were young.  They adopted their first daughter Willa Gray from Uganda.  Soon after adopted they had their second daughter, Ada James.  Recently they had their third daughter, Lennon Love.</p>
+    <p>Thomas Rhett has written many songs and some of them with his dad.  His first number one song was "It goes like this."  He has had 14 number one songs.  He has sang duets with Maren Morris and Kelsea Ballerini.</p>
+ 
+  </article>
+  
+</section>
+
+<footer>
+	<i>Copyright &copy; 2020 Jonathon Cannon. All Rights Reserved.</i> 
+</footer>
+
+</body>
+</html>
